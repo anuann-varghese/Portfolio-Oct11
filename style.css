@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -8,15 +12,17 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: lightblue;
+    /* background-color: lightblue; */
+  font-family: 'Dancing Script', cursive;
 }
 nav{
     height: 50px;
     width: 100%;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     display: flex;
     justify-content:space-between ;
     align-items: center;
+    padding-bottom: 10px;
     
 }
 .navList{
@@ -36,4 +42,63 @@ nav{
 .logo img{
    width: 100%; 
    height: 100%;
+}
+main{
+    width: 100%;
+    height: 30%;
+    /* background-color: bisque; */
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.name-profession{
+    display: flex;
+    flex-direction: column;
+  gap: 20px;
+}
+
+.about-me{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 20px;
+    background-image: url(https://images.unsplash.com/photo-1548685913-fe6678babe8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+}
+.my-image{
+    height: 100%;
+    width: 60%;
+}
+.my-image img{
+    height: 100%;
+    width: 100%;
+   
+}
+.name-profession{
+    display: flex;
+   
+}
+.education{
+    height: 30%;
+    background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    word-spacing: 5px;
+}
+footer{
+    position: absolute;
+    right: 20px;
 }
