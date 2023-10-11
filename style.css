@@ -74,13 +74,15 @@ main{
     align-items: center;
     gap: 20px;
     background-image: url(https://images.unsplash.com/photo-1548685913-fe6678babe8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+    object-fit: contain;
 }
 .my-image{
-    height: 100%;
-    width: 60%;
+height: 100%;
+width: 60%;
 }
 .my-image img{
     height: 100%;
+    object-fit: contain;
     width: 100%;
    
 }
@@ -91,6 +93,7 @@ main{
 .education{
     height: 30%;
     background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+    background-repeat: no-repeat;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -101,4 +104,24 @@ main{
 footer{
     position: absolute;
     right: 20px;
+    
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 1.3em;
+    }
+   .background{
+    background-size: cover;
+   }
+   .education{
+    background-size: cover;
+   }
+   .footer{
+    font-size: 1.2em;
+    bottom: 5px;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
